@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #ffe6f0, #d6ecff);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #444;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #444;
+}
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* Pengaturan Dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Tata Letak Galeri (Horizontal / Grid) */
+.galeri-container {
+    display: grid;
+    /* Membagi menjadi 3 kolom yang sama besar */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Desain Kartu Thumbnail */
+figure {
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.03);
+    /* Efek membesar sedikit saat disentuh/hover */
+}
+
+/* Desain Gambar */
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Agar gambar tidak gepeng */
+    border-radius: 5px;
+}
+
+/* Desain Keterangan (Caption) */
+figcaption {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Wadah Tombol Logout (Tengah Bawah) */
+.logout-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Desain Tombol Logout */
+.btn-logout {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3);
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* Responsif: Menjadi 2 kolom untuk tablet, 1 kolom untuk HP */
+@media (max-width: 768px) {
+    .galeri-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeri-container {
+        grid-template-columns: 1fr;
+    }
+}
